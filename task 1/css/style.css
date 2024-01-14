@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100%;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem ;
+    /* background-color: grey; */
+    color: white;
+    background-color: rgb(0, 0, 62);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+nav .companyName{
+    cursor: pointer;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li{
+    cursor:pointer;
+    transition: .3s all;
+}
+
+nav ul li:hover{
+    color: tomato;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    min-height: 100vh;
+    flex-wrap:wrap;
+    gap: 3rem
+}
+.imgdiv{
+    height: 400px;
+}
+
+img{
+    height: 100%;
+    width:100%;
+    /* object-fit: cover;
+    object-position: centers; */
+    
+}
+.details{
+max-width: 500px;
+}
+.details h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.details p{
+   max-width: 400px;
+}
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem ;
+    border-top: 2px solid grey;
+    background-color: rgb(24, 18, 18);
+    color:white
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 880px){
+    nav{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .hero{
+        /* padding-inline:1rem ; */
+        padding: 10rem 1rem;
+    }
+     .imgdiv img{
+        width: 100%;
+        height: auto;
+     }
+
+}
+
